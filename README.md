@@ -1,3 +1,7 @@
+# NOTE: This is not the current maintained version of Logger. If you are looking to use Logger, it is maintained in the following repository:
+
+https://github.com/efidoman/xdrip-js-logger
+
 # xdrip-js-logger - the xdrip-js One-Shot Mode Logger.
 
 Logger connects to the g5 transmitter, waits for the first bg, logs a json entry record, then exits. Doing it one-shot at a time seems to make xdrip-js more reliable in some cases. xdrip-get-entries.sh is a wrapper shell script that is called from cron every minute. It calls the one shot mode logger handling the preparation and sending of the blood glucose data to Nightscout and to OpenAPS.
