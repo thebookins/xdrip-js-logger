@@ -12,7 +12,7 @@ transmitter.on('glucose', glucose => {
       'device': 'DexcomR4',
       'date': glucose.readDate,
       'dateString': new Date(glucose.readDate).toISOString(),
-      'sgv': Math.round(glucose.unfiltered),
+      'sgv': Math.round(glucose.unfiltered/1000),
       'direction': 'None',
       'type': 'sgv',
       'filtered': Math.round(glucose.filtered),
@@ -24,7 +24,7 @@ transmitter.on('glucose', glucose => {
     }];
     const data = JSON.stringify(entry);
 
-  if(glucose.unfiltered > 500 || glucose.unfiltered < 30) // for safety, I'm assuming it is erroneous and ignoring
+  if(glucose.unfiltered > 500000 || glucose.unfiltered < 30000) // for safety, I'm assuming it is erroneous and ignoring
     {
       console.log("Error - bad glucose data, not processing");
       process.exit();
