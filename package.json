@@ -1,6 +1,6 @@
 {
   "name": "xdrip-js-logger",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "description": "",
   "main": "logger/index.js",
   "author": "Paul Dickens",
@@ -10,12 +10,13 @@
     "global-install": "npm install && sudo npm install -g && sudo npm link && sudo npm link logger"
   },
   "dependencies": {
-    "xdrip-js": "thebookins/xdrip-js#v1.1.0"
+    "xdrip-js": "thebookins/xdrip-js#v1.1.2"
   },
   "bin": {
     "xdrip-get-entries": "./xdrip-get-entries.sh",
     "post-xdripAPS": "./post-xdripAPS.sh",
-    "post-ns": "./post-ns.sh"
+    "post-ns": "./post-ns.sh",
+    "calc-calibration": "./calc-calibration.sh"
   }
 }
 
