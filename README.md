@@ -1,6 +1,6 @@
 # NOTE: This is not the current maintained version of Logger. If you are looking to use Logger, it is maintained in the following repository:
 
-https://github.com/efidoman/xdrip-js-logger
+https://github.com/xdrip-js/Logger
 
 # xdrip-js-logger - the xdrip-js One-Shot Mode Logger.
 
